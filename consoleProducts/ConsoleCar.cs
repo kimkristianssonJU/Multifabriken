@@ -7,12 +7,7 @@ namespace ConsoleProduct
 {
     class ConsoleCar : Car
     {
-        public ConsoleCar(string brand, Colors color, string regNumber) : base(brand, color, regNumber)
-        {
-            this.brand = brand;
-            this.color = color;
-            this.regNumber = regNumber;
-        }
+        public ConsoleCar(string brand, Colors color, string regNumber) : base(brand, color, regNumber) { }
         // Används för att kategorisera i handelslistan (Session.shoppingCart) 
         public override string ProductType
         {

@@ -12,11 +12,7 @@ namespace ConsoleProduct
         // Regex-mönster för att färglägga godisbitar
         const string regexPattern = @"(?<default>.*[^o])(?<color>o.*)(?<color2>o.*)(?<color3>o.*\n?)|(?<default2>.*[^o])(?<color4>o.*)(?<color5>o.*\n?)|(?<default3>.*[^o])(?<color6>o.*\n?)|(?<default4>.*[^o]\n?)";
         Random random = new Random();
-        public ConsoleCandy(Flavours flavour, int amount) : base(flavour, amount)
-        {
-            this.flavour = flavour;
-            this.amount = amount;
-        }
+        public ConsoleCandy(Flavours flavour, int amount) : base(flavour, amount) { }
 
         // Används för att kategorisera i handelslistan (Session.shoppingCart) 
         public override string ProductType

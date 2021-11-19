@@ -7,11 +7,7 @@ namespace ConsoleProduct
 {
     class ConsoleTofu : Tofu
     {
-        public ConsoleTofu(double quantity, string seasoning) : base(quantity, seasoning)
-        {
-            this.quantity = quantity;
-            this.seasoning = seasoning;
-        }
+        public ConsoleTofu(double quantity, string seasoning) : base(quantity, seasoning) { }
         // Används för att kategorisera i handelslistan (Session.shoppingCart) 
         public override string ProductType
         {

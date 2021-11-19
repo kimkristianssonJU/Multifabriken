@@ -7,11 +7,8 @@ namespace ConsoleProduct
 {
     class ConsoleTwine : Twine
     {
-        public ConsoleTwine(double length, Colors color) : base(length, color)
-        {
-            this.length = length;
-            this.color = color;
-        }
+        public ConsoleTwine(double length, Colors color) : base(length, color) { }
+
         // Används för att kategorisera i handelslistan (Session.shoppingCart) 
         public override string ProductType
         {
